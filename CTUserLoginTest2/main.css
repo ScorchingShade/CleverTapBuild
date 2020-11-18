@@ -1,0 +1,125 @@
+.btn-info {
+    border-radius: 8px;
+    border: none;
+    background: #337AB7;
+    color: #fff;
+    outline: none;
+}
+
+.btn-info:hover {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(22, 6, 241));
+}
+
+.btn-info:focus {
+    border: none;
+}
+
+#snackbar {
+    visibility: hidden;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #3e88f8;
+    border-radius: 12px;
+    text-align: center;
+    /* To center it horizontally (if you want) */
+    line-height: 30px;
+    /* To center it vertically */
+    color: white;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.btn-view {
+    border-radius: 8px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(109, 186, 248);
+    color: white;
+}

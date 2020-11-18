@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTTest</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <script src="./main.js"></script>
+
+
+</head>
+
+<body>
+
+    <div style="width: 50%; margin: auto; text-align: center;">
+        <h1>CleverTap OnUserLogin test</h1><br>
+
+        <label>Change Identity</label>
+        <div class="tooltip">
+            <input type="text" placeholder="e.g 12345678" id="identity">
+            <span class="tooltiptext">Change Identity to view onUserLogin Change</span>
+        </div>
+        <button class="btn-view" onclick="setIdentity()">Set Identity</button>
+
+
+
+        <table style="padding: 2%;width: 50%; margin: auto; text-align: center;">
+            <tr>
+                <th>Name</th>
+                <th>Pass</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="name"><br>
+
+                </td>
+                <td>
+                    <input type="password" id="pass"><br>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <button style="border-radius: 8px; font-size: 20px; outline: none; border: none; background-color: blue; color: white;" onclick="clickEvent();pro();">Log in</button>
+        </div>
+
+
+
+
+    </div>
+
+    <br>
+    <br>
+    <div id="myProgress" style="visibility: hidden;">
+        <div id="myBar">10%</div>
+    </div>
+
+
+    <div id="snackbar">OnUserLogin Called check console for logs!</div>
+    <script src="./effects.js"></script>
+</body>
+
+</html>
